@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { WiDayLightning } from 'weather-icons-react';
 import ThemeChanger from '../style-selectors/style-selector';
+
 const HomeLinks = [
     { href: '/', text: 'Home – Layout 1', badge: 'NEW' },
     { href: '/home-two', text: 'Home – Layout 2', badge: 'POPULAR' },
@@ -21,7 +22,7 @@ const HomeLinks = [
     { href: '/post-template-two', text: 'Post - layout 2' },
     { href: '/post-template-three', text: 'Post - layout 3' },
     { href: '/about', text: 'About Us' },
-    { href: '/typography', text: 'Typography' },
+    // { href: '/typography', text: 'Typography' },
     { href: '/contact', text: 'Contact' },
     { href: '/faq', text: 'Faq' },
    
@@ -116,34 +117,34 @@ const Header = () => {
                                                 <ul className="align-items-center d-flex gap-2">
                                                     <li>
                                                         <Link href="#">
+                                                            <i className="fab fa-tiktok" />
+                                                        </Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link href="#">
                                                             <i className="fab fa-facebook-f" />
                                                         </Link>
                                                     </li>
-                                                    <li>
-                                                        <Link href="#">
-                                                            <i className="fab fa-twitter" />
-                                                        </Link>
-                                                    </li>
-                                                    <li>
+                                                    {/* <li>
                                                         <Link href="#">
                                                             <i className="fab fa-vk" />
                                                         </Link>
-                                                    </li>
-                                                    <li>
+                                                    </li> */}
+                                                    {/* <li>
                                                         <Link href="#">
                                                             <i className="fab fa-instagram" />
                                                         </Link>
-                                                    </li>
-                                                    <li>
+                                                    </li> */}
+                                                    {/* <li>
                                                         <Link href="#">
                                                             <i className="fab fa-youtube" />
                                                         </Link>
-                                                    </li>
-                                                    <li>
+                                                    </li> */}
+                                                    {/* <li>
                                                         <Link href="#">
                                                             <i className="fab fa-vimeo-v" />
                                                         </Link>
-                                                    </li>
+                                                    </li> */}
                                                 </ul>
                                             </div>
                                             {/* End of /. header social */}
@@ -159,7 +160,7 @@ const Header = () => {
                                 {/* End of /. top left menu */}
                             </div>
                             {/* Start header top right menu */}
-                            <div className="col-auto ms-auto">
+                            {/* <div className="col-auto ms-auto">
                                 <div className="header-right-menu">
                                     <ul className="d-flex justify-content-end">
                                         <li className="d-md-block d-none">
@@ -184,7 +185,7 @@ const Header = () => {
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                             {/* end of /. header top right menu */}
                         </div>
                         {/* end of /. row */}
@@ -207,6 +208,7 @@ const Header = () => {
                                     <span className="fw-semibold text-uppercase menu-text">
                                         All Section
                                     </span>
+                                    
                                 </div>
                             </div>
                             <div className="col-auto">
@@ -218,12 +220,12 @@ const Header = () => {
                                     {/* Start logo */}
                                     <Link href="/" className="header-logo">
                                         <img
-                                            src="assets/images/logo.png"
+                                            src="/HEDLYNE-LOGO.png"
                                             className="header-logo_dark"
                                             alt=""
                                         />
                                         <img
-                                            src="assets/images/logo-white.png"
+                                            src="/HEDLYNE-LOGO.png"
                                             className="header-logo_white"
                                             alt=""
                                         />
@@ -231,15 +233,14 @@ const Header = () => {
                                     {/* Start language dropdown */}
                                     <div className="dropdown language-dropdown">
                                         <button
-                                            className="btn p-0 dropdown-toggle d-flex align-items-center gap-2"
+                                            className="btn p-0  d-flex align-items-center gap-2"
                                             type="button"
-                                            data-bs-toggle="dropdown"
-                                            aria-expanded="false"
+                                            
                                         >
                                             <i className="fa-solid fa-earth-americas" />
                                             <div className="fw-semibold">En</div>
                                         </button>
-                                        <ul className="dropdown-menu">
+                                        {/* <ul className="dropdown-menu">
                                             <li>
                                                 <Link className="dropdown-item active" href="#">
                                                     <i className="sl-flag flag-de" />
@@ -252,7 +253,7 @@ const Header = () => {
                                                     <span className="language-text">En</span>
                                                 </Link>
                                             </li>
-                                        </ul>
+                                        </ul> */}
                                     </div>
                                 </div>
                             </div>
@@ -337,14 +338,14 @@ const Header = () => {
                                 <div className="collapse-brand flex-shrink-0">
                                     <Link href="/">
                                         <img
-                                            src="assets/images/logo.png"
+                                            src="/HEDLYNE-LOGO.png"
                                             className="header-logo_dark"
                                             alt=""
                                         />
                                     </Link>
                                     <Link href="/">
                                         <img
-                                            src="assets/images/logo-white.png"
+                                            src="/HEDLYNE-LOGO.png"
                                             className="header-logo_white"
                                             alt=""
                                         />
@@ -365,11 +366,11 @@ const Header = () => {
                             </div>
                             {/* End Navbar Collapse Header */}
                             <ul className="navbar-nav">
-                                <li className="nav-item dropdown">
-                                    <Link className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <li className="nav-item ">
+                                    <Link className="nav-link " href="/" >
                                         Home
                                     </Link>
-                                    <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    {/* <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
                                         {HomeLinks.slice(0, 9).map((link, index) => (
                                             <li key={index}>
@@ -378,19 +379,21 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                         ))}
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li className="nav-item dropdown mega-menu-content d-none d-lg-block">
                                     <Link className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Mega Menu
+                                        More Topics
                                     </Link>
                                     {/* Mega Menu */}
-                                    <ul className="dropdown-menu mega-menu p-3 megamenu-content" aria-labelledby="dropdownMenuButton2">
+                                    <ul className="dropdown-menu mega-menu-mega p-3 megamenu-content" aria-labelledby="dropdownMenuButton2">
                                         <li>
-                                            <div className="row">
+                                            <div className="col">
                                                 <div className="col-menu col-md-3">
-                                                    <h6 className="title">Accessories</h6>
-                                                    <div className="content">
+                                                    <Link href="#">
+                                                        <h6  className="title">Politics</h6>
+                                                    </Link>
+                                                    {/* <div className="content">
                                                         <ul className="menu-col">
                                                             <li>
                                                                 <Link href="#">Beanies</Link>
@@ -411,12 +414,14 @@ const Header = () => {
                                                                 <Link href="#">Scarves</Link>
                                                             </li>
                                                         </ul>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 {/* end col-3 */}
                                                 <div className="col-menu col-md-3">
-                                                    <h6 className="title">Sports</h6>
-                                                    <div className="content">
+                                                    <Link href="#">
+                                                        <h6 className="title">Sports</h6>
+                                                    </Link>
+                                                    {/* <div className="content">
                                                         <ul className="menu-col">
                                                             <li>
                                                                 <Link href="#">Cricket</Link>
@@ -437,12 +442,14 @@ const Header = () => {
                                                                 <Link href="#">Shorts</Link>
                                                             </li>
                                                         </ul>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 {/* end col-3 */}
                                                 <div className="col-menu col-md-3">
-                                                    <h6 className="title">Tops</h6>
-                                                    <div className="content">
+                                                    <Link href="#">
+                                                        <h6 className="title">Entertainment</h6>
+                                                    </Link>
+                                                    {/* <div className="content">
                                                         <ul className="menu-col">
                                                             <li>
                                                                 <Link href="#">Cardigans</Link>
@@ -463,11 +470,13 @@ const Header = () => {
                                                                 <Link href="#">Shirts</Link>
                                                             </li>
                                                         </ul>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <div className="col-menu col-md-3">
-                                                    <h6 className="title">Accessories</h6>
-                                                    <div className="content">
+                                                    <Link href="#">
+                                                        <h6 className="title">Education</h6>
+                                                    </Link>
+                                                    {/* <div className="content">
                                                         <ul className="menu-col">
                                                             <li>
                                                                 <Link href="#">Olympic</Link>
@@ -488,7 +497,7 @@ const Header = () => {
                                                                 <Link href="#">Parkas</Link>
                                                             </li>
                                                         </ul>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 {/* end col-3 */}
                                             </div>
@@ -496,14 +505,14 @@ const Header = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="nav-item dropdown mega-menu-content d-none d-lg-block" >
-                                    <Link className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li className="nav-item  mega-menu-content d-none d-lg-block" >
+                                    <Link className="nav-link " href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
                                         Video
                                     </Link>
                                     {/* Mega Menu */}
-                                    <ul className="dropdown-menu mega-menu p-3 megamenu-content" aria-labelledby="dropdownMenuButton3">
+                                    <ul className="dropdown-menu  p-3 megamenu-content" aria-labelledby="dropdownMenuButton3">
                                         <li className="g-3 row">
-                                            <div className="col-menu-video col-md-3">
+                                            {/* <div className="col-menu-video col-md-3">
                                                 <Link className="video-nav-item" href="#">
                                                     <div className="img-wrapper">
                                                         <img
@@ -519,9 +528,9 @@ const Header = () => {
                                                         It is a long established fact that a reader will be.{" "}
                                                     </h4>
                                                 </Link>
-                                            </div>
+                                            </div> */}
                                             {/* end col-3 */}
-                                            <div className="col-menu-video col-md-3">
+                                            {/* <div className="col-menu-video col-md-3">
                                                 <Link className="video-nav-item" href="#" >
                                                     <div className="img-wrapper">
                                                         <img
@@ -537,9 +546,9 @@ const Header = () => {
                                                         It is a long established fact that a reader will be.{" "}
                                                     </h4>
                                                 </Link>
-                                            </div>
+                                            </div> */}
                                             {/* end col-3 */}
-                                            <div className="col-menu-video col-md-3">
+                                            {/* <div className="col-menu-video col-md-3">
                                                 <Link className="video-nav-item" href="#">
                                                     <div className="img-wrapper">
                                                         <img
@@ -555,8 +564,8 @@ const Header = () => {
                                                         It is a long established fact that a reader will be.{" "}
                                                     </h4>
                                                 </Link>
-                                            </div>
-                                            <div className="col-menu-video col-md-3">
+                                            </div> */}
+                                            {/* <div className="col-menu-video col-md-3">
                                                 <Link className="video-nav-item" href="#">
                                                     <div className="img-wrapper">
                                                         <img
@@ -572,9 +581,9 @@ const Header = () => {
                                                         It is a long established fact that a reader will be.{" "}
                                                     </h4>
                                                 </Link>
-                                            </div>
+                                            </div> */}
                                             {/* end col-3 */}
-                                            <div className="col-menu-video col-md-3">
+                                            {/* <div className="col-menu-video col-md-3">
                                                 <Link className="video-nav-item" href="#">
                                                     <div className="img-wrapper">
                                                         <img
@@ -590,14 +599,14 @@ const Header = () => {
                                                         It is a long established fact that a reader will be.{" "}
                                                     </h4>
                                                 </Link>
-                                            </div>
+                                            </div> */}
                                             {/* end col-3 */}
                                         </li>
                                     </ul>
                                 </li>
 
-                                <li className="nav-item dropdown">
-                                    <Link
+                                {/* <li className="nav-item dropdown"> */}
+                                    {/* <Link
                                         className="nav-link dropdown-toggle active"
                                         href="#"
                                         role="button"
@@ -607,8 +616,8 @@ const Header = () => {
 
                                     >
                                         Pages
-                                    </Link>
-                                    <ul className="dropdown-menu">
+                                    </Link> */}
+                                    {/* <ul className="dropdown-menu">
                                         <li className="nav-item dropdown dropend">
                                             <Link
                                                 className="dropdown-item dropdown-toggle"
@@ -671,17 +680,19 @@ const Header = () => {
                                                         </Link>
                                                     </li>
                                                 ))}
-                                    </ul>
-                                </li>
+                                    </ul> */}
+                                {/* </li> */}
+
+
                                 {HomeLinks.slice(15, 19).map((link, index) => (
-                                                    <li key={index} className="nav-item">
-                                                        <Link className={`nav-link ${path === link.href ? 'active' : ''}`} href={link.href}>
-                                                            {link.text} {link.badge && <span className="menu-badge">{link.badge}</span>}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                               
+                                    <li key={index} className="nav-item">
+                                        <Link className={`nav-link ${path === link.href ? 'active' : ''}`} href={link.href}>
+                                            {link.text} {link.badge && <span className="menu-badge">{link.badge}</span>}
+                                        </Link>
+                                    </li>
+                                ))}
                             </ul>
+                               
                         </div>
                         <div className="w-100 w-lg-auto d-none d-lg-flex">
                             {/* Start Search Button */}
@@ -705,7 +716,7 @@ const Header = () => {
                     <div className="d-flex flex-column h-100">
                         <div className="">
                             <Link href="/" className="d-inline-block my-3">
-                                <img src="assets/images/logo-white.png" alt="" height={50} />
+                                <img src="/HEDLYNE-LOGO.png" alt="" height={50} />
                             </Link>
                             <p>
                                 It is a long established fact that a reader will be distracted by the
@@ -723,20 +734,20 @@ const Header = () => {
                                     About
                                 </Link>
                             </li>
-                            <li className="nav-item h5">
+                            {/* <li className="nav-item h5">
                                 <Link className="nav-link" href="#">
                                     Our Journal
                                 </Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item h5">
                                 <Link className="nav-link" href="/contact">
                                     Contact Us
                                 </Link>
                             </li>
                         </ul>
-                        <h5 className="wiget-title">Instagrams</h5>
-                        <ul className="g-1 insta_thumb list-unstyled p-0 row">
-                            <li className="col-6">
+                        {/* <h5 className="wiget-title">Instagrams</h5> */}
+                        {/* <ul className="g-1 insta_thumb list-unstyled p-0 row"> */}
+                            {/* <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
                                     <img
                                         src="assets/images/instagram-1.jpg"
@@ -744,8 +755,8 @@ const Header = () => {
                                         alt=""
                                     />
                                 </Link>
-                            </li>
-                            <li className="col-6">
+                            </li> */}
+                            {/* <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
                                     <img
                                         src="assets/images/instagram-2.jpg"
@@ -753,8 +764,8 @@ const Header = () => {
                                         alt=""
                                     />
                                 </Link>
-                            </li>
-                            <li className="col-6">
+                            </li> */}
+                            {/* <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
                                     <img
                                         src="assets/images/instagram-3.jpg"
@@ -762,8 +773,8 @@ const Header = () => {
                                         alt=""
                                     />
                                 </Link>
-                            </li>
-                            <li className="col-6">
+                            </li> */}
+                            {/* <li className="col-6">
                                 <Link href="#" className="insta_effect d-inline-block position-relative">
                                     <img
                                         src="assets/images/instagram-4.jpg"
@@ -771,24 +782,24 @@ const Header = () => {
                                         alt=""
                                     />
                                 </Link>
-                            </li>
-                        </ul>
-                        <div className="mt-auto pb-3">
+                            </li> */}
+                        {/* </ul> */}
+                        {/* <div className="mt-auto pb-3"> */}
                             {/* Address */}
-                            <p className="mb-2 fw-bold">New York, USA (HQ)</p>
-                            <address className="mb-0">
+                            {/* <p className="mb-2 fw-bold">New York, USA (HQ)</p> */}
+                            {/* <address className="mb-0">
                                 1123 Fictional St, San Francisco, CA 94103
-                            </address>
-                            <p className="mb-2">
+                            </address> */}
+                            {/* <p className="mb-2">
                                 Call:{" "}
                                 <Link href="#" className="text-white">
                                     <u>(123) 456-7890</u> (Toll-free)
                                 </Link>{" "}
-                            </p>
-                            <Link href="#" className="d-block text-white">
+                            </p> */}
+                            {/* <Link href="#" className="d-block text-white">
                                 hello@inews.com
-                            </Link>
-                        </div>
+                            </Link> */}
+                        {/* </div> */}
                     </div>
                 </nav>
                 {/* END OF /. SIDEBAR */}
