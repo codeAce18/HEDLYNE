@@ -205,18 +205,9 @@ const Header = () => {
                                         <span />
                                     </div>
                                     <div className="vr" />
-                                    <span className="fw-semibold text-uppercase menu-text">
+                                    {/* <span className="fw-semibold text-uppercase menu-text">
                                         All Section
-                                    </span>
-                                    
-                                </div>
-                            </div>
-                            <div className="col-auto">
-                                <div className="align-items-center d-flex gap-3">
-                                    {/* Start weather text */}
-                                    <div className="fs-5 fw-semibold weather-text">
-                                        <WiDayLightning size={28} /> 11.23°C
-                                    </div>
+                                    </span> */}
                                     {/* Start logo */}
                                     <Link href="/" className="header-logo">
                                         <img
@@ -230,6 +221,15 @@ const Header = () => {
                                             alt=""
                                         />
                                     </Link>
+                                </div>
+                            </div>
+                            <div className="col-auto">
+                                <div className="align-items-center d-flex gap-3">
+                                    {/* Start weather text */}
+                                    <div className="fs-5 fw-semibold weather-text">
+                                        <WiDayLightning size={28} /> 11.23°C
+                                    </div>
+                                    
                                     {/* Start language dropdown */}
                                     <div className="dropdown language-dropdown">
                                         <button
@@ -255,10 +255,10 @@ const Header = () => {
                                             </li>
                                         </ul> */}
                                     </div>
+                                    <div className="col text-end fw-semibold text-uppercase date-text">
+                                        Friday, August 4
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col text-end fw-semibold text-uppercase date-text">
-                                Friday, August 4
                             </div>
                         </div>
                     </div>
