@@ -15,7 +15,7 @@ const page = () => {
                 {/* START PAGE HEADER */}
                 <section
                     className="inner-head bg-img"
-                    data-image-src="assets/images/about-bg.jpg"
+                    // data-image-src="assets/images/about-bg.jpg"
                 >
                     <div className="container position-relative">
                         <div className="row">

@@ -19,7 +19,7 @@ const HomeLinks = [
     { href: '/post-template', text: 'Post - layout 1' },
     { href: '/post-template-two', text: 'Post - layout 2' },
     { href: '/post-template-three', text: 'Post - layout 3' },
-    { href: '/typography', text: 'Typography' },
+    // { href: '/typography', text: 'Typography' },
     { href: '/about', text: 'About Us' },
     { href: '/contact', text: 'Contact' },
     { href: '/faq', text: 'F.A.Q' },
@@ -74,32 +74,12 @@ const HeaderTwo = () => {
                                             <ul className="align-items-center d-flex gap-2">
                                                 <li>
                                                     <Link href="#">
+                                                        <i className="fab fa-tiktok" />
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link href="#">
                                                         <i className="fab fa-facebook-f" />
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="#">
-                                                        <i className="fab fa-twitter" />
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="#">
-                                                        <i className="fab fa-vk" />
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="#">
-                                                        <i className="fab fa-instagram" />
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="#">
-                                                        <i className="fab fa-youtube" />
-                                                    </Link>
-                                                </li>
-                                                <li>
-                                                    <Link href="#">
-                                                        <i className="fab fa-vimeo-v" />
                                                     </Link>
                                                 </li>
                                             </ul>
@@ -117,7 +97,7 @@ const HeaderTwo = () => {
                             {/* End of /. top left menu */}
                         </div>
                         {/* Start header top right menu */}
-                        <div className="col-auto ms-auto">
+                        {/* <div className="col-auto ms-auto">
                             <div className="header-right-menu">
                                 <ul className="d-flex justify-content-end">
                                     <li className="d-md-block d-none">
@@ -142,7 +122,7 @@ const HeaderTwo = () => {
                                     </li>
                                 </ul>
                             </div>
-                        </div>{" "}
+                        </div>{" "} */}
                         {/* end of /. header top right menu */}
                     </div>{" "}
                     {/* end of /. row */}
@@ -155,20 +135,20 @@ const HeaderTwo = () => {
                 <div className="container">
                     <div className="align-items-center row">
                         <div className="col-sm-4">
-                            <Link href="/">
+                            <Link href="/" className='header-logo'>
                                 <img
-                                    src="assets/images/logo.png"
+                                    src="/HEDLYNE-LOGO.png"
                                     className="img-fluid header-logo header-logo_dark"
                                     alt=""
                                 />
                                 <img
-                                    src="assets/images/logo-white.png"
+                                    src="/HEDLYNE-LOGO.png"
                                     className="img-fluid header-logo_white"
                                     alt=""
                                 />
                             </Link>
                         </div>
-                        <div className="col-sm-8">
+                        {/* <div className="col-sm-8">
                             <Link href="#">
                                 <img
                                     src="assets/images/add728x90-1.jpg"
@@ -176,7 +156,7 @@ const HeaderTwo = () => {
                                     alt=""
                                 />
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
@@ -286,10 +266,10 @@ const HeaderTwo = () => {
                         {/* End Navbar Collapse Header */}
                         <ul className="navbar-nav">
                             <li className="nav-item dropdown">
-                                <Link className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                <Link className="nav-link" href="/" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                     Home
                                 </Link>
-                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                {/* <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
                                     {HomeLinks.slice(0, 9).map((link, index) => (
                                         <li key={index}>
@@ -298,19 +278,21 @@ const HeaderTwo = () => {
                                             </Link>
                                         </li>
                                     ))}
-                                </ul>
+                                </ul> */}
                             </li>
                             <li className="nav-item dropdown mega-menu-content d-none d-lg-block">
                                 <Link className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Mega Menu
+                                    More Topics
                                 </Link>
                                 {/* Mega Menu */}
-                                <ul className="dropdown-menu mega-menu p-3 megamenu-content" aria-labelledby="dropdownMenuButton2">
+                                <ul className="dropdown-menu mega-menu-mega p-3 megamenu-content" aria-labelledby="dropdownMenuButton2">
                                     <li>
-                                        <div className="row">
+                                        <div className="col">
                                             <div className="col-menu col-md-3">
-                                                <h6 className="title">Accessories</h6>
-                                                <div className="content">
+                                                <Link href="#">
+                                                    <h6  className="title">Politics</h6>
+                                                </Link>
+                                                {/* <div className="content">
                                                     <ul className="menu-col">
                                                         <li>
                                                             <Link href="#">Beanies</Link>
@@ -331,12 +313,14 @@ const HeaderTwo = () => {
                                                             <Link href="#">Scarves</Link>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             {/* end col-3 */}
                                             <div className="col-menu col-md-3">
-                                                <h6 className="title">Sports</h6>
-                                                <div className="content">
+                                                <Link href="#">
+                                                    <h6 className="title">Sports</h6>
+                                                </Link>
+                                                {/* <div className="content">
                                                     <ul className="menu-col">
                                                         <li>
                                                             <Link href="#">Cricket</Link>
@@ -357,12 +341,14 @@ const HeaderTwo = () => {
                                                             <Link href="#">Shorts</Link>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             {/* end col-3 */}
                                             <div className="col-menu col-md-3">
-                                                <h6 className="title">Tops</h6>
-                                                <div className="content">
+                                                <Link href="#">
+                                                    <h6 className="title">Entertainment</h6>
+                                                </Link>
+                                                {/* <div className="content">
                                                     <ul className="menu-col">
                                                         <li>
                                                             <Link href="#">Cardigans</Link>
@@ -383,11 +369,13 @@ const HeaderTwo = () => {
                                                             <Link href="#">Shirts</Link>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             <div className="col-menu col-md-3">
-                                                <h6 className="title">Accessories</h6>
-                                                <div className="content">
+                                                <Link href="#">
+                                                    <h6 className="title">Education</h6>
+                                                </Link>
+                                                {/* <div className="content">
                                                     <ul className="menu-col">
                                                         <li>
                                                             <Link href="#">Olympic</Link>
@@ -408,7 +396,7 @@ const HeaderTwo = () => {
                                                             <Link href="#">Parkas</Link>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> */}
                                             </div>
                                             {/* end col-3 */}
                                         </div>
@@ -416,14 +404,14 @@ const HeaderTwo = () => {
                                     </li>
                                 </ul>
                             </li>
-                            <li className="nav-item dropdown mega-menu-content d-none d-lg-block" >
-                                <Link className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Video
+                        <li className="nav-item  mega-menu-content d-none d-lg-block" >
+                                <Link className="nav-link " href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Videos
                                 </Link>
                                 {/* Mega Menu */}
-                                <ul className="dropdown-menu mega-menu p-3 megamenu-content" aria-labelledby="dropdownMenuButton3">
+                                <ul className="dropdown-menu  p-3 megamenu-content" aria-labelledby="dropdownMenuButton3">
                                     <li className="g-3 row">
-                                        <div className="col-menu-video col-md-3">
+                                        {/* <div className="col-menu-video col-md-3">
                                             <Link className="video-nav-item" href="#">
                                                 <div className="img-wrapper">
                                                     <img
@@ -439,9 +427,9 @@ const HeaderTwo = () => {
                                                     It is a long established fact that a reader will be.{" "}
                                                 </h4>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                         {/* end col-3 */}
-                                        <div className="col-menu-video col-md-3">
+                                        {/* <div className="col-menu-video col-md-3">
                                             <Link className="video-nav-item" href="#" >
                                                 <div className="img-wrapper">
                                                     <img
@@ -457,9 +445,9 @@ const HeaderTwo = () => {
                                                     It is a long established fact that a reader will be.{" "}
                                                 </h4>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                         {/* end col-3 */}
-                                        <div className="col-menu-video col-md-3">
+                                        {/* <div className="col-menu-video col-md-3">
                                             <Link className="video-nav-item" href="#">
                                                 <div className="img-wrapper">
                                                     <img
@@ -475,8 +463,8 @@ const HeaderTwo = () => {
                                                     It is a long established fact that a reader will be.{" "}
                                                 </h4>
                                             </Link>
-                                        </div>
-                                        <div className="col-menu-video col-md-3">
+                                        </div> */}
+                                        {/* <div className="col-menu-video col-md-3">
                                             <Link className="video-nav-item" href="#">
                                                 <div className="img-wrapper">
                                                     <img
@@ -492,9 +480,9 @@ const HeaderTwo = () => {
                                                     It is a long established fact that a reader will be.{" "}
                                                 </h4>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                         {/* end col-3 */}
-                                        <div className="col-menu-video col-md-3">
+                                        {/* <div className="col-menu-video col-md-3">
                                             <Link className="video-nav-item" href="#">
                                                 <div className="img-wrapper">
                                                     <img
@@ -510,13 +498,13 @@ const HeaderTwo = () => {
                                                     It is a long established fact that a reader will be.{" "}
                                                 </h4>
                                             </Link>
-                                        </div>
+                                        </div> */}
                                         {/* end col-3 */}
                                     </li>
                                 </ul>
                             </li>
 
-                            <li className="nav-item dropdown">
+                            {/* <li className="nav-item dropdown">
                                 <Link
                                     className="nav-link dropdown-toggle active"
                                     href="#"
@@ -591,7 +579,7 @@ const HeaderTwo = () => {
                                         </li>
                                     ))}
                                 </ul>
-                            </li>
+                            </li> */}
 
                             {HomeLinks.slice(15, 19).map((link, index) => (
                                 <li key={index} className="nav-item">

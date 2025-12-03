@@ -12,13 +12,13 @@ const Footer = () => {
       {/* *** START FOOTER *** */}
       <footer
         className="main-footer bg-img"
-        data-image-src="assets/images/1920x1000-1.jpg"
+        // data-image-src="assets/images/1920x1000-1.jpg"
       >
         <div className="container position-relative z-1">
           <div className="g-3 row">
             <div className="col-md-3">
               <img
-                src="assets/images/logo-white.png"
+                src="/HEDLYNE-LOGO.png"
                 alt="footer logo"
                 className="img-fluid"
               />
@@ -57,27 +57,9 @@ const Footer = () => {
           </div>
           <hr className="mt-5 mb-4" />
           <div className="row">
-            {/* START FOOTER BOX (Qr Code) */}
-            <div className="col-sm-6 col-lg-3 footer-box py-4">
-              <div className="about-inner text-center">
-                <h5 className="wiget-title">Get My App</h5>
-                <div className="bg-white mb-3 d-inline-block">
-                  {/* Start Qr Code Image */}
-                  <img
-                    src="assets/images/qr-code.png"
-                    className="figure-img img-fluid mb-0"
-                    height={146}
-                    width={146}
-                    alt="..."
-                  />
-                  {/* /. End Qr Code Image */}
-                </div>
-                <p>Scan qr code and download the app for your mobile. </p>
-              </div>
-            </div>
             {/*  END OF /. FOOTER BOX (Qr Code) */}
             {/* START FOOTER BOX (Twitter feeds) */}
-            <div className="col-sm-6 col-lg-3 footer-box py-4">
+            {/* <div className="col-sm-6 col-lg-3 footer-box py-4">
               <div className="twitter-inner">
                 <h5 className="wiget-title">Twitter feeds</h5>
                 <ul className="margin-top-60">
@@ -104,7 +86,7 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             {/* END OF /. FOOTER BOX (Twitter feeds) */}
             {/* START FOOTER BOX (Category) */}
             <div className="col-sm-6 col-lg-3 footer-box py-4">
@@ -320,7 +302,7 @@ const Footer = () => {
         <div className="container">
           <div className="align-items-center g-1 g-sm-3 row">
             <div className="col text-center text-sm-start">
-              <div className="copy">Copyright@2023 I-News Inc.</div>
+              <div className="copy">Copyright@2025 HEDLYNE.</div>
             </div>
             <div className="col-sm-auto">
               <ul className="footer-nav list-unstyled text-center mb-0">

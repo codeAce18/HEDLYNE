@@ -507,7 +507,7 @@ const Header = () => {
                                 </li>
                                 <li className="nav-item  mega-menu-content d-none d-lg-block" >
                                     <Link className="nav-link " href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Video
+                                        Videos
                                     </Link>
                                     {/* Mega Menu */}
                                     <ul className="dropdown-menu  p-3 megamenu-content" aria-labelledby="dropdownMenuButton3">
