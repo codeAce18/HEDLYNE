@@ -5401,6 +5401,12 @@ blockquote.no-sign p {
     transition: all 0.3s;
 }
 
+.top-icons-redbg {
+    background: #eb0254;
+    padding: 8px !important;
+    border-radius: 5px;
+}
+
 .nav.flex-column:not(.nav-pills) .nav-link {
     padding-left: 0;
     padding-top: 0.3rem;

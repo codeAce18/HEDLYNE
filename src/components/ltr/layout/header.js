@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 import { WiDayLightning } from 'weather-icons-react';
-import ThemeChanger from '../style-selectors/style-selector';
 
 const HomeLinks = [
     { href: '/', text: 'Home – Layout 1', badge: 'NEW' },
@@ -114,37 +113,17 @@ const Header = () => {
                                         <li>
                                             {/* Start header social */}
                                             <div className="header-social">
-                                                <ul className="align-items-center d-flex gap-2">
-                                                    <li>
-                                                        <Link href="#">
-                                                            <i className="fab fa-tiktok" />
-                                                        </Link>
-                                                    </li>
+                                                <ul className="align-items-center d-flex gap-4 top-icons-redbg">
                                                     <li>
                                                         <Link href="#">
                                                             <i className="fab fa-facebook-f" />
                                                         </Link>
                                                     </li>
-                                                    {/* <li>
+                                                    <li>
                                                         <Link href="#">
-                                                            <i className="fab fa-vk" />
+                                                            <i className="fab fa-tiktok" />
                                                         </Link>
-                                                    </li> */}
-                                                    {/* <li>
-                                                        <Link href="#">
-                                                            <i className="fab fa-instagram" />
-                                                        </Link>
-                                                    </li> */}
-                                                    {/* <li>
-                                                        <Link href="#">
-                                                            <i className="fab fa-youtube" />
-                                                        </Link>
-                                                    </li> */}
-                                                    {/* <li>
-                                                        <Link href="#">
-                                                            <i className="fab fa-vimeo-v" />
-                                                        </Link>
-                                                    </li> */}
+                                                    </li>
                                                 </ul>
                                             </div>
                                             {/* End of /. header social */}
@@ -296,12 +275,12 @@ const Header = () => {
                         <Link className="navbar-brand d-md-none" href="/">
                             {/* <img class="logo-dark" src="assets/images/logo.png" alt=""> */}
                             <img
-                                src="assets/images/logo.png"
+                                src="/HEDLYNE-LOGO.png"
                                 className="header-logo_dark"
                                 alt=""
                             />
                             <img
-                                src="assets/images/logo-white.png"
+                                src="/HEDLYNE-LOGO.png"
                                 className="header-logo_white"
                                 alt=""
                             />
@@ -367,7 +346,7 @@ const Header = () => {
                             {/* End Navbar Collapse Header */}
                             <ul className="navbar-nav">
                                 <li className="nav-item ">
-                                    <Link className="nav-link " href="/" >
+                                    <Link className="nav-link" href="/" >
                                         Home
                                     </Link>
                                     {/* <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">

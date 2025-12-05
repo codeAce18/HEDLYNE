@@ -29,29 +29,6 @@ const Footertwo = () => {
                                 distribution of letters, as opposed.
                             </p>
                         </div>
-                        <div className="col-md-4">
-                            {/* Form */}
-                            <form className="row row-cols-lg-auto g-2 align-items-center justify-content-end">
-                                <div className="col-12">
-                                    <input
-                                        type="email"
-                                        className="form-control"
-                                        placeholder="Enter your email address"
-                                    />
-                                </div>
-                                <div className="col-12">
-                                    <button type="submit" className="btn btn-news m-0">
-                                        Subscribe
-                                    </button>
-                                </div>
-                                <div className="form-text mt-2 text-white">
-                                    By subscribing you agree to our
-                                    <a href="#" className="text-decoration-underline text-primary">
-                                        Privacy Policy
-                                    </a>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                     <hr className="mt-5 mb-4" />
                     <div className="row">
@@ -112,201 +89,23 @@ const Footertwo = () => {
                                             <a href="#">Business</a>
                                         </li>
                                         <li>
-                                            <a href="#">LifeStyle</a>
+                                            <a href="#">Politics</a>
                                         </li>
                                         <li>
-                                            <a href="#">Technology</a>
+                                            <a href="#">Tech</a>
                                         </li>
                                         <li>
-                                            <a href="#">Culture</a>
+                                            <a href="#">Social</a>
                                         </li>
                                         <li>
                                             <a href="#">Entertainment</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Support</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Privacy Policy</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Newsletter</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div className="col-6">
-                                    <ul className="list-unstyled m-0 menu-services">
-                                        <li>
-                                            <a href="#">News</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Career</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Technology</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Startups</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Gadgets</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Inspiration</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         {/* END OF /. FOOTER BOX (Category) */}
-                        {/* START FOOTER BOX (Recent Post) */}
-                        <div className="col-sm-6 col-lg-3 footer-box py-4">
-                            <h5 className="wiget-title">Recent Post</h5>
-                            <div className="footer-news-grid">
-                                <div className="news-list-item">
-                                    <div className="img-wrapper">
-                                        <a href="#" className="thumb">
-                                            <img
-                                                src="assets/images/115x85-1.jpg"
-                                                alt=""
-                                                className="img-fluid"
-                                            />
-                                            <div className="link-icon">
-                                                <i className="fa fa-camera" />
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div className="post-info-2">
-                                        <h5>
-                                            <a href="#" className="title">
-                                                Cooking Recipes Anytime And Anywhere
-                                            </a>
-                                        </h5>
-                                        <ul className="align-items-center authar-info d-flex flex-wrap gap-1">
-                                            <li>Jan 4, 2021</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="news-list-item">
-                                    <div className="img-wrapper">
-                                        <a href="#" className="thumb">
-                                            <img
-                                                src="assets/images/115x85-2.jpg"
-                                                alt=""
-                                                className="img-fluid"
-                                            />
-                                            <div className="link-icon">
-                                                <i className="fa fa-camera" />
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div className="post-info-2">
-                                        <h5>
-                                            <a href="#" className="title">
-                                                Duis ac arcu porttitor, varius tortor vel, cursus ipsum.
-                                            </a>
-                                        </h5>
-                                        <ul className="align-items-center authar-info d-flex flex-wrap gap-1">
-                                            <li>Jan 4, 2021</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="news-list-item">
-                                    <div className="img-wrapper">
-                                        <a href="#" className="thumb">
-                                            <img
-                                                src="assets/images/115x85-3.jpg"
-                                                alt=""
-                                                className="img-fluid"
-                                            />
-                                            <div className="link-icon">
-                                                <i className="fa fa-camera" />
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div className="post-info-2">
-                                        <h5>
-                                            <a href="#" className="title">
-                                                Quisque nec orci eget libero semper dignissim.
-                                            </a>
-                                        </h5>
-                                        <ul className="align-items-center authar-info d-flex flex-wrap gap-1">
-                                            <li>Jan 4, 2021</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {/* END OF /. FOOTER BOX (Recent Post) */}
                     </div>
-                    {/* START HOT TOPICS */}
-                    <h5 className="wiget-title">Hot topics</h5>
-                    <ul className="lh-lg list-inline mb-0 text-primary-hover hot-topics">
-                        <li className="list-inline-item">
-                            <a href="#">Media</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">NewsCyber</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Half Full</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Covid-19</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Politics</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Opinion</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Entertainment</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Share Market</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Royalist</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Beast Inside</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">World</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Newsletters</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Scouted</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Travel</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Auction 2022</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Crossword</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Tech And Auto</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Podcasts</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Protests</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Education</a>
-                        </li>
-                        <li className="list-inline-item">
-                            <a href="#">Sports</a>
-                        </li>
-                    </ul>
-                    {/* END OF /. HOT TOPICS */}
                 </div>
             </footer>
             {/* *** END OF /. FOOTER *** */}

@@ -8,7 +8,7 @@ import YoutubeVideo from "@/components/rtl/youtube-video/youtube-video";
 import useRemoveBodyClass from "@/components/rtl/useEffect-hook/useEffect-hook";
 import DatePickerComponents from "@/components/rtl/date-picker/date-picker";
 import PollWidget from "@/components/rtl/poll-widget/poll";
-import HomeFeatureCarousal from "@/components/rtl/home-feature-carousal/home-feature-carousal";
+// import HomeFeatureCarousal from "@/components/rtl/home-feature-carousal/home-feature-carousal";
 import HomeCenterSlider from "@/components/rtl/home-center-slider/home-center-slider";
 import Tags from "@/components/rtl/tags/tags";
 import { useEffect } from "react";
@@ -35,7 +35,7 @@ export default function Home() {
           data-image-src="../../assets/images/bg-shape.png"
         >
           <div className="container">
-            <HomeFeatureCarousal />
+            {/* <HomeFeatureCarousal /> */}
           </div>
         </div>
         {/* END OF /. FEATURE SECTION */}
