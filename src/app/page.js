@@ -41,10 +41,10 @@ export default function Home() {
           </div>
         </div>
         {/* END OF /. FEATURE SECTION */}
-        <div className="container">
+        <div className="container" style={{paddingTop: '20px'}}>
           <div className="row gx-lg-5">
             {/* START MAIN CONTENT */}
-            <div className="col-md-3 leftSidebar d-none d-xl-block">
+            <div className=" leftSidebar d-none d-xl-block">
               <StickyBox >
                 <div className="panel_header">
                   <h4>
@@ -521,13 +521,21 @@ export default function Home() {
           </div>
         </div> */}
         {/* END OF /. YOUTUBE VIDEO */}
-        <section className="articles-wrapper" style={{paddingTop: '100px'}}>
+        <div
+          className="bg-img feature-section py-4 py-lg-3 py-xl-4"
+          data-image-src="../../assets/images/bg-shape.png"
+        >
+          <div className="container">
+            {/* <HomeFeatureCarousal /> */}
+          </div>
+        </div>
+        <section className="articles-wrapper">
           <div className="container">
             <div className="row gx-lg-5">
-              <div className="col-md-3 leftSidebar d-none d-xl-block">
+              <div className="leftSidebar d-none d-xl-block">
                 <StickyBox>
                   {/* START TECH & INNOVATION */}
-                  <div className="panel_inner">
+                  {/* <div className="panel_inner">
                     <div className="panel_header">
                       <h4>
                         <strong>TECH &amp;</strong> INNOVATION
@@ -590,10 +598,10 @@ export default function Home() {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* END OF /. TECH & INNOVATION */}
                   {/* START EDITOR'S PICKS */}
-                  <div className="panel_inner mb-0">
+                  {/* <div className="panel_inner mb-0">
                     <div className="panel_header">
                       <h4>
                         <strong>EDITOR'S</strong> PICKS
@@ -658,21 +666,19 @@ export default function Home() {
                         </ul>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                   {/* END OF /. EDITOR'S PICKS */}
                 </StickyBox>
               </div>
-              <div className="col-sm-7 col-md-8 col-xl-6 border-start border-end main-content">
-                <StickyBox>
+              {/* <div className="col-sm-7 col-md-8 col-xl-6 border-start border-end main-content"> */}
+                {/* <StickyBox> */}
                   {/* START POST CATEGORY STYLE FOUR (Latest articles ) */}
-                  <div className="post-inner">
-                    {/*post header*/}
+                  {/* <div className="post-inner">
                     <div className="post-head">
                       <h2 className="title">
                         <strong>Latest</strong> articles
                       </h2>
                     </div>
-                    {/* post body */}
                     <div className="post-body">
                       <div className="news-list-item articles-list">
                         <div className="img-wrapper">
@@ -860,10 +866,9 @@ export default function Home() {
                         </div>
                       </div>
                     </div>{" "}
-                    {/* /. post body */}
-                  </div>
-                </StickyBox>
-              </div>
+                  </div> */}
+                {/* </StickyBox> */}
+              {/* </div> */}
               <div className="col-sm-5 col-md-4 col-xl-3 rightSidebar">
                 <StickyBox>
                   {/* START ARCHIVE */}
