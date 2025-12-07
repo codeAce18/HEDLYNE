@@ -108,12 +108,12 @@ const Header = () => {
                         <div className="row">
                             <div className="col">
                                 {/* Start top left menu */}
-                                <div className="d-flex top-left-menu">
+                                <div className="d-flex top-left-menu justify-content-end">
                                     <ul className="align-items-center d-flex flex-wrap">
                                         <li>
                                             {/* Start header social */}
                                             <div className="header-social">
-                                                <ul className="align-items-center  d-flex gap-4 top-icons-redbg">
+                                                <ul className="align-items-center  d-flex gap-4  top-icons-redbg">
                                                     <li>
                                                         <Link href="#">
                                                             <i className="fab fa-facebook-f" />
