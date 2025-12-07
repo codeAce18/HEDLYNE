@@ -101,24 +101,12 @@ const Footer = () => {
         <div className="container">
           <div className="align-items-center g-1 g-sm-3 row">
             <div className="col text-center text-sm-start">
-              <div className="copy">Copyright@2025 HEDLYNE.</div>
+              <div className="copy">Copyright@2025 Hedlyne News.</div>
             </div>
             <div className="col-sm-auto">
               <ul className="footer-nav list-unstyled text-center mb-0">
                 <li className="list-inline-item">
-                  <a href="privacy.html">Privacy</a>
-                </li>
-                <li className="list-inline-item">
                   <a href="contact.html">Contact</a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="about.html">About</a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#">Donation</a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="faq.html">F.A.Q</a>
                 </li>
               </ul>
             </div>

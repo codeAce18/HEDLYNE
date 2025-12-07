@@ -20,10 +20,10 @@ const HomeLinks = [
     { href: '/post-template', text: 'Post - layout 1' },
     { href: '/post-template-two', text: 'Post - layout 2' },
     { href: '/post-template-three', text: 'Post - layout 3' },
-    { href: '/about', text: 'About Us' },
+    // { href: '/about', text: 'About Us' },
     // { href: '/typography', text: 'Typography' },
-    { href: '/contact', text: 'Contact' },
-    { href: '/faq', text: 'Faq' },
+    // { href: '/contact', text: 'Contact' },
+    // { href: '/faq', text: 'Faq' },
    
 ];
 const Header = () => {
@@ -113,7 +113,7 @@ const Header = () => {
                                         <li>
                                             {/* Start header social */}
                                             <div className="header-social">
-                                                <ul className="align-items-center d-flex gap-4 top-icons-redbg">
+                                                <ul className="align-items-center  d-flex gap-4 top-icons-redbg">
                                                     <li>
                                                         <Link href="#">
                                                             <i className="fab fa-facebook-f" />
@@ -128,12 +128,12 @@ const Header = () => {
                                             </div>
                                             {/* End of /. header social */}
                                         </li>
-                                        <li className="d-none d-sm-block">
+                                        {/* <li className="d-none d-sm-block">
                                             <Link href="#">Contact</Link>
                                         </li>
                                         <li className="d-none d-sm-block">
                                             <Link href="#">Donation</Link>
-                                        </li>
+                                        </li> */}
                                     </ul>
                                 </div>
                                 {/* End of /. top left menu */}
@@ -205,12 +205,12 @@ const Header = () => {
                             <div className="col-auto">
                                 <div className="align-items-center d-flex gap-3">
                                     {/* Start weather text */}
-                                    <div className="fs-5 fw-semibold weather-text">
+                                    {/* <div className="fs-5 fw-semibold weather-text">
                                         <WiDayLightning size={28} /> 11.23°C
-                                    </div>
+                                    </div> */}
                                     
                                     {/* Start language dropdown */}
-                                    <div className="dropdown language-dropdown">
+                                    {/* <div className="dropdown language-dropdown">
                                         <button
                                             className="btn p-0  d-flex align-items-center gap-2"
                                             type="button"
@@ -219,24 +219,10 @@ const Header = () => {
                                             <i className="fa-solid fa-earth-americas" />
                                             <div className="fw-semibold">En</div>
                                         </button>
-                                        {/* <ul className="dropdown-menu">
-                                            <li>
-                                                <Link className="dropdown-item active" href="#">
-                                                    <i className="sl-flag flag-de" />
-                                                    <span className="language-text">De</span>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link className="dropdown-item" href="#">
-                                                    <i className="sl-flag flag-usa" />
-                                                    <span className="language-text">En</span>
-                                                </Link>
-                                            </li>
-                                        </ul> */}
-                                    </div>
-                                    <div className="col text-end fw-semibold text-uppercase date-text">
+                                    </div> */}
+                                    {/* <div className="col text-end fw-semibold text-uppercase date-text">
                                         Friday, August 4
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

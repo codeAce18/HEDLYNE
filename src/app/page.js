@@ -5,12 +5,12 @@ import NewsTicker from "@/components/ltr/news-ticker-carousal/page";
 import SunnyWeather from "@/components/ltr/sunny-wether/sunny-weather";
 import { useBackgroundImageLoader } from "@/components/ltr/use-background-image/use-background-image";
 import Layout from "@/components/ltr/layout/layout";
-import YoutubeVideo from "@/components/ltr/youtube-video/youtube-video";
+// import YoutubeVideo from "@/components/ltr/youtube-video/youtube-video";
 import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
-import DatePickerComponents from "@/components/ltr/date-picker/date-picker";
+// import DatePickerComponents from "@/components/ltr/date-picker/date-picker";
 import PollWidget from "@/components/ltr/poll-widget/poll";
 // import HomeFeatureCarousal from "@/components/ltr/home-feature-carousal/home-feature-carousal";
-import HomeCenterSlider from "@/components/ltr/home-center-slider/home-center-slider";
+// import HomeCenterSlider from "@/components/ltr/home-center-slider/home-center-slider";
 import Tags from "@/components/ltr/tags/tags";
 import { useEffect } from "react";
 import Link from "next/link";
@@ -51,6 +51,13 @@ export default function Home() {
                     <strong>Top </strong> Stories
                   </h4>
                 </div>
+                <a href="#" className="news-image">
+                  <img
+                    src="assets/images/masonry/slider/01.jpg"
+                    alt=""
+                    className="img-fluid"
+                  />
+                </a>
                 <div className="border-bottom posts">
                   <ul>
                     <li className="post-grid">
@@ -130,7 +137,7 @@ export default function Home() {
                         Most Viewed
                       </button>
                     </li>
-                    <li className="nav-item" role="presentation">
+                    {/* <li className="nav-item" role="presentation">
                       <button
                         className="nav-link border-0"
                         id="popular-news"
@@ -143,7 +150,7 @@ export default function Home() {
                       >
                         Popular news
                       </button>
-                    </li>
+                    </li> */}
                   </ul>
                   <div className="tab-content" id="myTabContent">
                     <div
@@ -199,7 +206,7 @@ export default function Home() {
                         </ul>
                       </div>
                     </div>
-                    <div
+                    {/* <div
                       className="tab-pane fade"
                       id="popular-news-pane"
                       role="tabpanel"
@@ -292,7 +299,7 @@ export default function Home() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
                 {/* END OF /. NAV TABS */}

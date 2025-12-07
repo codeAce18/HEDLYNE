@@ -20,9 +20,9 @@ const HomeLinks = [
     { href: '/post-template-two', text: 'Post - layout 2' },
     { href: '/post-template-three', text: 'Post - layout 3' },
     // { href: '/typography', text: 'Typography' },
-    { href: '/about', text: 'About Us' },
-    { href: '/contact', text: 'Contact' },
-    { href: '/faq', text: 'F.A.Q' },
+    // { href: '/about', text: 'About Us' },
+    // { href: '/contact', text: 'Contact' },
+    // { href: '/faq', text: 'F.A.Q' },
 ];
 const HeaderTwo = () => {
     const [isSearchOpen, setIsSearchOpen] = useState(false);
