@@ -346,7 +346,7 @@ const Header = () => {
                                         ))}
                                     </ul> */}
                                 </li>
-                                <li className="nav-item dropdown mega-menu-content d-none d-lg-block">
+                                <li className="nav-item dropdown mega-menu-content">
                                     <Link className="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                         More Topics
                                     </Link>
@@ -470,8 +470,8 @@ const Header = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="nav-item  mega-menu-content d-none d-lg-block" >
-                                    <Link className="nav-link " href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
+                                <li className="nav-item  mega-menu-content" >
+                                    <Link className="nav-link" href="#" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-expanded="false">
                                         Videos
                                     </Link>
                                     {/* Mega Menu */}
