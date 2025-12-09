@@ -44,7 +44,7 @@ export default function Home() {
         <div className="container" style={{paddingTop: '20px'}}>
           <div className="row gx-lg-5">
             {/* START MAIN CONTENT */}
-            <div className=" leftSidebar d-none d-xl-block">
+            <div className=" leftSidebar d-block d-xl-block">
               <StickyBox >
                 <div className="panel_header">
                   <h4>
