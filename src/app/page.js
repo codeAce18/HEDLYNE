@@ -11,9 +11,9 @@ import useRemoveBodyClass from "@/components/ltr/useEffect-hook/useEffect-hook";
 import PollWidget from "@/components/ltr/poll-widget/poll";
 // import HomeFeatureCarousal from "@/components/ltr/home-feature-carousal/home-feature-carousal";
 // import HomeCenterSlider from "@/components/ltr/home-center-slider/home-center-slider";
-import Tags from "@/components/ltr/tags/tags";
+// import Tags from "@/components/ltr/tags/tags";
 import { useEffect } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 export default function Home() {
   useEffect(() => {
     // Your logic for setting dir attribute using JavaScript
@@ -119,6 +119,21 @@ export default function Home() {
                       </div>
                     </li>
                   </ul>
+                </div>
+                <div className="col-sm-5 col-md-4 col-xl-3 rightSidebar">
+                  <StickyBox>
+                    {/* START ARCHIVE */}
+                    {/* <div className="archive-wrapper">
+                      <DatePickerComponents />
+                    </div> */}
+                    {/* END OF /. ARCHIVE */}
+                    {/* START POLL WIDGET */}
+                    <PollWidget />
+                    {/* END OF /. POLL WIDGET */}
+                    {/* START TAGS */}
+                    {/* <Tags /> */}
+                    {/* END OF /. TAGS */}
+                  </StickyBox>
                 </div>
                 {/* START NAV TABS */}
                 <div className="tabs-wrapper">
@@ -876,21 +891,6 @@ export default function Home() {
                   </div> */}
                 {/* </StickyBox> */}
               {/* </div> */}
-              <div className="col-sm-5 col-md-4 col-xl-3 rightSidebar">
-                <StickyBox>
-                  {/* START ARCHIVE */}
-                  {/* <div className="archive-wrapper">
-                    <DatePickerComponents />
-                  </div> */}
-                  {/* END OF /. ARCHIVE */}
-                  {/* START POLL WIDGET */}
-                  <PollWidget />
-                  {/* END OF /. POLL WIDGET */}
-                  {/* START TAGS */}
-                  {/* <Tags /> */}
-                  {/* END OF /. TAGS */}
-                </StickyBox>
-              </div>
             </div>
           </div>
         </section>
