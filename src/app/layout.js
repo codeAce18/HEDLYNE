@@ -7,19 +7,19 @@ import Providers from './theme-providers';
 import StyleSelectors from '@/components/rtl/style-selector/style-selector';
 
 {/* *** START FONT DECLARATION *** */ }
-export const cormorant = Cormorant_Garamond({
+const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
   display: 'swap',
   weight: ['300', '400', '500', '600', '700'],
   variable: '--font-cormorant-garamond',
 })
-export const roboto = Roboto({
+const roboto = Roboto({
   subsets: ['latin'],
   display: 'swap',
   weight: ['100', '300', '400', '500', '700', '900',],
   variable: '--font-roboto',
 })
-export const sourceSans = Source_Sans_3({
+const sourceSans = Source_Sans_3({
   subsets: ['latin'],
   display: 'swap',
   weight: ['300', '400', '500', '600', '700'],
